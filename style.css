@@ -50,33 +50,63 @@ input {
 }
 
 .myButton {
-	box-shadow: 0px 10px 14px -7px #7a0000;
-	background:linear-gradient(to bottom, #eb3d3d 5%, #ba2b2b 100%);
-	background-color:#eb3d3d;
-	border-radius:4px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	padding:15px 59px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #632828;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #ba2b2b 5%, #eb3d3d 100%);
-	background-color:#ba2b2b;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
+    box-shadow: 0px 10px 14px -7px #7a0000;
+    background:linear-gradient(to bottom, #eb3d3d 5%, #ba2b2b 100%);
+    background-color:#eb3d3d;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    padding:15px 59px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #632828;
 }
 
-button:hover {
+.myButton:hover {
+    background:linear-gradient(to bottom, #ba2b2b 5%, #eb3d3d 100%);
+    background-color:#ba2b2b;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+/* button:hover {
     filter: brightness(0.2);
     cursor: pointer;
-}
+} */
 
 #resposta div {
     margin-top: 12px;
     margin-bottom: 3px;
     opacity: 0.7;
+    transition: 1s;
+}
+
+.fadeOut {
+    animation: fadeOut 3s;
+}
+
+.fadeIn {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
